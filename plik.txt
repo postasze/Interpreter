@@ -1,0 +1,83 @@
+// Poczatek programu - komentarz jednolinijkowy
+
+integer globalnaZmienna3 = 2384;
+
+integer funkcja1() 
+{
+	return 0;
+}
+
+integer zmienna1 = 0, zmienna2 = 15, zmienna3 = 3, zmienna4 = -5;
+
+integer potega(integer x) 
+{
+	return x*x;
+}
+
+integer silnia(integer n)
+{
+	if(n == 1) then
+		return 1;
+	else
+		return n*silnia(n-1);
+}
+
+integer main()
+{
+	matrix[1][5] of integer tablica = [ [ 23 12 56 -3 27 ] ] ;
+	matrix[3][6] of integer macierz = [ [ 43 0 13 -51 85 3 ] [ 71 -232 6 9 -1 5 ] [ 2 -12 35 -31 7 8 ] ] ;
+	matrix[2][2] of integer macierz1, macierz2, macierz3, macierz4;
+	
+	integer i = 0;
+
+	integer liczba = 62473, liczba1 = 2, liczba2, liczba3 = -4, liczba4 = -7; // pierwszy komentarz
+
+	liczba2 = 1;
+
+	// drugi komentarz
+
+	liczba1 = silnia(10);
+	write(liczba1);
+	liczba1 = (liczba2 + liczba3) * liczba4;
+	liczba1 = liczba2 / liczba3;
+	liczba1 = liczba2 ^ 5;
+	liczba1 = potega(liczba3 * 12);
+
+	macierz2 = [ [ 24 12 ] [ -3 7 ] ] + [ [ 4 -2 ] [ 25  7 ] ];
+	macierz3 = [ [ 24  5 ] [ 3 27 ] ] * [ [ 4  5 ] [ -1 73 ] ];
+	macierz1 = (macierz2 + macierz3) * macierz2;
+	macierz1 = macierz2 * macierz3;
+
+	while (i < 11)
+		i = i + 1;
+		
+	if((zmienna1 == zmienna2) and (zmienna3 != zmienna4)) then
+		write (globalnaZmienna3);
+	else
+	{
+		write (i);
+	}
+
+
+	read ( zmienna2, zmienna3 );
+
+	write ( zmienna1, zmienna2, zmienna3, zmienna4 );
+
+	write (liczba, liczba1, liczba2, liczba3, liczba4);
+
+	write ((-zmienna2 + 6) * 3);
+
+	write (tablica);
+
+	write (macierz);
+
+	write (macierz2);
+
+	write (macierz3);
+
+	/* komentarz wielolinijkowy
+	integer liczba5 = 4;
+	*/	
+
+	return 0;
+}
